@@ -7,7 +7,7 @@ function Login({ onLogin }) {
     const [showLogin, setShowLogin] = useState(true)
 
     return (
-        <div>
+        <div id="login">
         <h1>have you SEEN IT?</h1>
         <h4>review the movies you've seen.<br></br>
         watch the ones you haven't.</h4><br></br>

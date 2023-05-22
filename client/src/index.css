@@ -42,3 +42,9 @@ nav a:hover{
 .poster {
   height: 20rem;
 }
+
+#login {
+  background-color: #61dafb;
+  margin: auto;
+  width: 600px;
+}
