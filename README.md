@@ -33,4 +33,3 @@ After creating an account, this application allows users to review movies they h
 - [MIT](https://choosealicense.com/licenses/mit/)
 
 
-
