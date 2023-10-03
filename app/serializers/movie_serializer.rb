@@ -1,5 +1,5 @@
 class MovieSerializer < ActiveModel::Serializer
-  attributes :id, :title, :genre, :year, :director, :image_url, :movies_with_reviews
+  attributes :id, :title, :genre, :year, :director, :image_url
 
   #object stands for self 
 

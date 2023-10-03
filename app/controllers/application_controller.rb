@@ -2,6 +2,7 @@ class ApplicationController < ActionController::API
   include ActionController::Cookies
 
   before_action :authorize 
+  
   rescue_from ActiveRecord::RecordInvalid, with: :handle_invalid
 
   private 

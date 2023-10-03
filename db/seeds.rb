@@ -18,14 +18,14 @@ movie7 = Movie.create(title: 'Raiders of the Lost Ark', genre: 'Action', year: 1
 movie8 = Movie.create(title: 'La Dolce Vita', genre: 'Drama', year: 1960, director: 'Federico Fellini', image_url: 'https://media.timeout.com/images/105456105/1372/1029/image.jpg')
 movie9 = Movie.create(title: 'Seven Samurai', genre: 'Action', year: 1954, director: 'Akira Kurosawa', image_url: 'https://media.timeout.com/images/101714537/1372/1029/image.jpg')
 movie10 = Movie.create(title: 'In the Mood for Love', genre: 'Drama', year: 2000, director: 'Wong Kar-wai', image_url: 'https://media.timeout.com/images/105455977/1372/1029/image.jpg')
-
+movie11 = Movie.create(title: "Singing in the Rain", genre: "Musical", year: 1952, director: "Gene Kelly", image_url: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoC1dCs1rL9rx8MbLd-1WzVih4KhlZej-CgOLjJKZa7ntPsk2-")
 
 20.times do 
 User.create(username:  Faker::Name.name.split(" ")[0], password: "1234")
 end
 
 100.times do
-    Review.create(user_id: User.all.sample.id, movie_id: Movie.all.sample.id, review_content: Faker::Quote.jack_handey)
+    Review.create(user_id: User.all.sample.id, movie_id: Movie.all.sample.id, review_content: Faker::Quote.jack_handey )
 end
 
 puts "✅ Done seeding!"
