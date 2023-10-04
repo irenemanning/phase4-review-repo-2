@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-    skip_before_action :authorize, only: :index
+    skip_before_action :authorize, only: [:index, :word_search]
 
     def index 
         movies = Movie.all
@@ -28,6 +28,7 @@ class MoviesController < ApplicationController
         head :no_content
     end
 
+ 
     private 
 
     def movie_params

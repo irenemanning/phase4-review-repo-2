@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
     # skip_before_action :require_login, only: [:new, :create]
-    skip_before_action :authorize, only: [:word]
+    skip_before_action :authorize, only: [:word, :find_review]
+
     def index 
         reviews = @current_user.reviews 
         render json: reviews, status: 200
@@ -26,10 +27,6 @@ class ReviewsController < ApplicationController
         review = @current_user.reviews.find(params[:id])
         review.destroy 
         head :no_content
-    end
-
-    def word
-        byebug
     end
 
     private 
